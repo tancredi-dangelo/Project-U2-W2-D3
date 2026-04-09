@@ -14,23 +14,26 @@
 
 // ROUNDED BORDERS
 
-@mixin border($px, $type, $color, $radius) {
-  border: #{$px} #{$type} #{$color}; 
-  border-radius: #{$radius};
+@mixin border($px: 1px, $type: solid, $color: black, $radius: null) {
+  @if $px != null and $type != null and $color != null {
+    border: #{$px} #{$type} #{$color};
+  }
+  @if $radius != null {
+    border-radius: #{$radius};
+  }
 }
+
 
 // BOX SHADOWS
 
-@mixin shadow-light {
+@mixin shadow($level: s-light) {
+  @if $level == s-light {
     box-shadow: variables.$shadow-light;
-}
-
-@mixin shadow-medium {
+  } @else if $level == s-medium {
     box-shadow: variables.$shadow-medium;
-}
-
-@mixin shadow-deep {
+  } @else if $level == s-deep {
     box-shadow: variables.$shadow-deep;
+  }
 }
 
 
