@@ -1,3 +1,5 @@
+@use './variables' as variables;  
+
 
 // DISPLAY
 
@@ -10,34 +12,25 @@
 }
 
 
-
 // ROUNDED BORDERS
 
-@mixin rounded-light {
-    border-radius: $border-light;
+@mixin border($px, $type, $color, $radius) {
+  border: #{$px} #{$type} #{$color}; 
+  border-radius: #{$radius};
 }
-
-@mixin rounded-medium {
-    border-radius: $border-medium;
-}
-
-@mixin rounded-deep {
-    border-radius: $border-deep;
-}
-
 
 // BOX SHADOWS
 
 @mixin shadow-light {
-    box-shadow: $shadow-light;
+    box-shadow: variables.$shadow-light;
 }
 
 @mixin shadow-medium {
-    box-shadow: $shadow-medium;
+    box-shadow: variables.$shadow-medium;
 }
 
 @mixin shadow-deep {
-    box-shadow: $shadow-deep;
+    box-shadow: variables.$shadow-deep;
 }
 
 

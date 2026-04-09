@@ -1,0 +1,72 @@
+// styles.scss
+@use './reset' as reset;
+@use "./variables" as variables;
+@use "./font" as font;
+@use './mixins' as mixins;
+@use './animations' as animations;
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 50%;
+    @include mixins.flex(column, center, center, nowrap);
+    background-color: variables.$my-purple;
+}
+
+nav {
+    @include mixins.flex(row, center, space-between, nowrap);
+    width: 100%;
+    height: 20%;
+    padding: variables.$padding-medium;
+}
+
+nav img {
+    width: 70px;
+    padding: variables.$padding-medium;
+}
+
+nav #img-div {
+    @include mixins.flex(row, center, flex-start, nowrap);
+    width: 30%;
+    height: 100%;
+}
+
+nav #menu {
+    @include mixins.flex(row, center, space-evenly, nowrap);
+    width: 30%;
+    height: 100%;
+}
+
+header #hero {
+    height: 80%;
+    width: 100%;
+}
+
+img {
+    width: 300px;
+}
+
+button {
+    @include mixins.border(2px, solid, white, 5px);
+    @include mixins.shadow-light;
+    padding: variables.$padding-medium;
+    margin: variables.$margin-light;
+    font-size: variables.$main-button-font-size;
+}
+
+#products {
+    @include mixins.flex(row, center, space-evenly, nowrap);
+    padding: variables.$padding-deeper;
+}
+
+#products img {
+    width: 20%;
+    max-width: 300px;
+    @include mixins.border(3px, solid, black, 5px);
+    @include mixins.shadow-medium;
+}

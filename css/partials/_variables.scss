@@ -9,18 +9,11 @@ $main-p-font-size: 18px;
 $main-button-font-size: 14px;
 
 
-// BORDERS
-
-$border-light: 5px;
-$border-medium: 10px;
-$border-deep: 15px;
-
-
 // SHADOWS
 
-$shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
-$shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.15);
-$shadow-deep: 0 10px 20px rgba(0, 0, 0, 0.25);
+$shadow-light: 0 1px 3px rgb(0, 0, 0);
+$shadow-medium: 0 4px 6px rgb(0, 0, 0);
+$shadow-deep: 0 10px 20px rgb(0, 0, 0);
 
 
 // PADDING
@@ -39,5 +32,10 @@ $margin-deep: 10px;
 $margin-deeper: 20px;
 
 
+// COLORS 
 
-
+$my-text-color: #f4f4f4;
+$my-green: #4caf50;
+$my-orange: #ff9700;
+$my-blue: #0e6cff;
+$my-purple: #640fc5;

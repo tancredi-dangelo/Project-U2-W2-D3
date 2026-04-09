@@ -1,0 +1,45 @@
+@use './variables' as variables;
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: variables.$main-h1-font-size;
+    font-weight: bold;
+    color: variables.$my-text-color;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: variables.$main-h2-font-size;
+    font-weight: bold;
+    color: variables.$my-text-color;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: variables.$main-h3-font-size;
+    font-weight: bold;
+    color: variables.$my-text-color;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: variables.$main-h4-font-size;
+    font-weight: bold;
+    color: variables.$my-text-color
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: variables.$main-p-font-size;
+    font-weight: normal;
+    color: variables.$my-text-color
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: variables.$main-p-font-size;
+    font-weight: normal;
+    text-decoration: none;
+    color: variables.$my-text-color
+}

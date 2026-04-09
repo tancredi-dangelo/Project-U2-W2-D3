@@ -1,0 +1,21 @@
+{
+    // Live Sass Compiler: Output settings
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",           // readable CSS
+            "extensionName": ".css",        // CSS file extension
+            "savePath": "/css"              // folder relative to workspace root
+        }
+    ],
+
+    // Generate source maps
+    "liveSassCompile.settings.generateMap": true,
+
+    // Optional: automatically watch main SCSS files on save
+    "liveSassCompile.settings.autoprefix": [],
+    
+    // Optional: exclude partials from being compiled directly
+    "liveSassCompile.settings.excludeList": [
+        "/**/_*.scss"
+    ]
+}
