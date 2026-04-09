@@ -1,0 +1,52 @@
+@import "./partials/reset";
+@import "./partials/variables";
+@import "./partials/font";
+@import "./partials/mixins";
+@import "./partials/colors";
+@import "./partials/buttons";
+@import "./partials/spacing";
+@import "./partials/mixins";
+@import "./partials/animations";
+
+
+html,body {
+    width: $full-width;
+    height: $full-height;
+}
+
+header {
+    width: 100%;
+    height: 50%;
+    @include flex(column, center, center, nowrap);
+    background-color: $my-purple;
+}
+
+nav {
+    @include flex(row, center, space-between, nowrap);
+    width: 100%;
+    height: 30%;
+    padding: $padding-light;
+}
+
+nav img {
+    width: 100px;
+    padding: $padding-light;
+}
+
+nav div {
+    width: 30%;
+    height: 100%;
+}
+
+header #hero {
+    height: 70%;
+    width: 100%;
+}
+
+img {
+    width: 300px;
+}
+
+
+
+

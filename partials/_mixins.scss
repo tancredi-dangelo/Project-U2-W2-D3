@@ -1,0 +1,44 @@
+
+// DISPLAY
+
+@mixin flex ($direction, $align-items, $justify, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align-items;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+
+
+// ROUNDED BORDERS
+
+@mixin rounded-light {
+    border-radius: $border-light;
+}
+
+@mixin rounded-medium {
+    border-radius: $border-medium;
+}
+
+@mixin rounded-deep {
+    border-radius: $border-deep;
+}
+
+
+// BOX SHADOWS
+
+@mixin shadow-light {
+    box-shadow: $shadow-light;
+}
+
+@mixin shadow-medium {
+    box-shadow: $shadow-medium;
+}
+
+@mixin shadow-deep {
+    box-shadow: $shadow-deep;
+}
+
+
+// 
