@@ -26,12 +26,12 @@
 
 // BOX SHADOWS
 
-@mixin shadow($level: s-light) {
-  @if $level == s-light {
+@mixin shadow($level: light) {
+  @if $level == light {
     box-shadow: variables.$shadow-light;
-  } @else if $level == s-medium {
+  } @else if $level == medium {
     box-shadow: variables.$shadow-medium;
-  } @else if $level == s-deep {
+  } @else if $level == deep {
     box-shadow: variables.$shadow-deep;
   }
 }
